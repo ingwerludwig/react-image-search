@@ -1,10 +1,11 @@
 import React from 'react'
+import "./App.css";
 
 const Image = ({item}) => {
     return (
-        <div>
-            <img src = {item.thumbnail.thumbnailUrl} />
-            <p> {item.text}</p>
+        <div className="result">
+            <img className="image" src = {item.thumbnail.thumbnailUrl} />
+            <p className="image-name"> {item.text}</p>
         </div>
     )
 }
