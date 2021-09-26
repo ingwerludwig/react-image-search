@@ -25,9 +25,10 @@ function App() {
   return (
     <div className="App">
     <h1>Mau cari gambar apa nich?</h1>
-    <input value={input} onChange={(e) => setInput(e.target.value)}/>
-    <button onClick={() => fetchData()}>Clickk akuuu</button>
- 
+      <div className="form">
+        <input className="input" value={input} onChange={(e) => setInput(e.target.value)}/>
+        <button className="button" onClick={() => fetchData()}>Clickk akuuu</button>
+      </div>
     <div className="images-wrapper">
       {images.length > 0 && images.map(item => {return(<Image item= {item}/>)} ) }
     </div>
